@@ -1,0 +1,3 @@
+rootProject.name = "SharedPrefsExp"
+include ':app'
+include ':SharedPrefs'
