@@ -227,7 +227,7 @@ public class SharedPrefs {
 
     @SuppressWarnings("unchecked")
     public <T> void saveObject(String saveFileName , String key , T value){
-        save(saveFileName , key , value , (Class<T>)value.getClass());
+        save(saveFileName , key , value ,value != null ?  (Class<T>)value.getClass() : null);
     }
 
 
