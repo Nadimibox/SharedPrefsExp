@@ -1,4 +1,4 @@
-package com.mrnadimi.sharedprefs;
+package com.nadimibox.sharedprefs;
 
 import android.content.Context;
 

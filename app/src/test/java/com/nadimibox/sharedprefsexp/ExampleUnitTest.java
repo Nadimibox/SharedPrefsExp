@@ -1,4 +1,4 @@
-package com.mrnadimi.sharedprefsexp;
+package com.nadimibox.sharedprefsexp;
 
 import org.junit.Test;
 

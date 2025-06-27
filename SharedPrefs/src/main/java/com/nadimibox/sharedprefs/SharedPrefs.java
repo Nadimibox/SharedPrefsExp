@@ -1,4 +1,4 @@
-package com.mrnadimi.sharedprefs;
+package com.nadimibox.sharedprefs;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -15,7 +15,7 @@ import java.util.Objects;
 /**
  * Developer: Mohamad Nadimi
  * Company: Saghe
- * Website: https://www.mrnadimi.com
+ * Website: https://www.nadimibox.com
  * Created on 02 August 2021
  * <p>
  * Description: ...
@@ -48,7 +48,7 @@ public class SharedPrefs {
     }
 
     private SharedPrefs(Context applicationContext) {
-        context = new WeakReference<Context>(applicationContext);
+        context = new WeakReference<>(applicationContext);
         defaultFileName = applicationContext.getPackageName();
     }
 
@@ -93,7 +93,7 @@ public class SharedPrefs {
             return ((T)(sharedPreferences.getString(key , (String) defValue)));
         }else {
             Gson gson = new Gson();
-            String result = sharedPreferences.getString(key, (String) defValue);
+            String result = sharedPreferences.getString(key,defValue == null ? null : (String) defValue);
             if (result == null){
                 return null;
             }
